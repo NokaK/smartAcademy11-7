@@ -1,0 +1,171 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.relative {
+	position: relative;
+}
+.bakground {
+	width: 100%;
+}
+.absolute {
+	position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    background: pink;
+    transform: translate(-50%,-50%);
+}
+.bg {
+	position: relative;
+	height: 500px;
+	width:  100%;
+	background-image: url(../image/Landscape-Color.jpg);
+	background-position: center; 
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+h5 {
+	text-align: center;
+	font-size: 40px;
+	color: green;
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    background: pink;
+    transform: translate(-50%,-50%);
+}
+.container {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	background-color: green
+}
+.box {
+	
+	height: 200px;
+	position: absolute;
+	animation-name: box;
+	animation-delay: 0.3s;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-fill-mode: backwards;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	/*transition-property: all;
+	transition-duration: 0.9s;
+	transition-delay: 0.5s;
+	transition-timing-function: linear;*/
+}
+.box1 {
+	height: 200px;
+	position: absolute;
+	animation-name: second;
+	animation-delay: 0.3s;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-fill-mode: backwards;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+/*.box:hover{
+	background-color: yellow;
+	width: 400px;
+	border: 5px dotted green;	
+}
+*/
+/*h6 {
+	font-size: 40px;
+	transition-property: all;
+	transition-duration: 0.9s;
+	transition-delay: 0.5s;
+	transition-timing-function: linear;
+	opacity: 0.5;
+}*/
+/*.box:hover h6 {
+	opacity: 1;
+	color: #fff;
+}*/
+
+
+@keyframes box {
+	0%{
+		width: 200px;
+		background-color: purple;
+		top: 0;
+		left: 0;
+	}
+	20% {
+		width: 300px;
+		background-color: blue;
+		top: 50px;
+		left: 50px;
+	}
+	40% {
+		width: 400px;
+		background-color: green;
+		top: 100px;
+		left: 100px;
+		/*transform: rotate(100deg);*/
+		border-radius: 50%;
+	}
+	60% {
+		background-color: pink;
+		top: 150px;
+		left: 150px;
+	}
+	80% {
+		width: 400px;
+		background-color: red;
+		top: 200px;
+		left: 200px;
+	}
+	100%{
+		width: 300px;
+		background-color: yellow;
+		top: 250px;
+		left: 250px;
+	}
+}
+@keyframes second {
+	0%{
+		width: 200px;
+		background-color: purple;
+		bottom: 0;
+		right: 0;
+	}
+	20% {
+		width: 300px;
+		background-color: blue;
+		bottom: 50px;
+		right: 50px;
+	}
+	40% {
+		width: 400px;
+		background-color: green;
+		bottom: 100px;
+		right: 100px;
+		/*transform: rotate(100deg);*/
+		border-radius: 50%;
+	}
+	60% {
+		width: 500px;
+		background-color: pink;
+		bottom: 150px;
+		right: 150px;
+	}
+	80% {
+		width: 400px;
+		background-color: red;
+		bottom: 200px;
+		right: 200px;
+	}
+	100%{
+		width: 300px;
+		background-color: yellow;
+		bottom: 250px;
+		right: 250px;
+	}
+}
